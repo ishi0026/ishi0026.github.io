@@ -1,0 +1,33 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    color: gray;
+}
+
+/* add class to HTML heading  */
+.site-title {
+
+}
+
+/* add my-image and photo to HTML */
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+/* add hobbies list using ul to HTML */
+
+/* remove underline */
+a:link {
+    text-decoration: underline;
+    border: apx solid black;
+    background-color: blue;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: red;
+}
+
