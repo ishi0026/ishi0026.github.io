@@ -4,7 +4,7 @@ body {
 }
 
 header, footer {
-    color: gray;
+    color: brown;
 }
 
 /* add class to HTML heading  */
@@ -14,7 +14,7 @@ header, footer {
 
 /* add my-image and photo to HTML */
 #my-image {
-    box-shadow: 0px 0px 2px 1px black;
+    box-shadow: 0px 0px 2px 1px gray;
 }
 
 /* add hobbies list using ul to HTML */
