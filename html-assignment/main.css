@@ -7,17 +7,17 @@ header, footer {
     background-color: #E7C9CE;
 }
 
-/* add class to HTML heading  */
+/* change the color of text of heading  */
 .site-title {
     color: #E67A7A;
 }
 
-/* add my-image and photo to HTML */
+/* apply box-shadow on the image */
 #my-image {
     box-shadow: 0px 0px 2px 1px black;
 }
 
-/* add hobbies using box to HTML */
+/* add a square arround hobby list */
 .hobbies {
     padding: 0.5em 1em;
     margin: 2em 0;
@@ -30,8 +30,8 @@ header, footer {
     background: plum; 
 }
 
-/* remove underline */
-/* Add a background and border to the links */
+/* remove underline from the links */
+/* add a background and border to the links */
 nav a:link {
     text-decoration: none;
     border: 1px solid;
