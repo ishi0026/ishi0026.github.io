@@ -30,6 +30,15 @@ header, footer {
     background: plum; 
 }
 
+/* try to use nav */
+/* .hobbies li:nth-child(odd) { 
+    background: plum; 
+} */
+
+nav ul {
+    list-style-type: none;
+  }
+
 /* remove underline from the links */
 /* add a background and border to the links */
 nav a:link {
