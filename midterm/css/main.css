@@ -1,20 +1,27 @@
 body {
     margin-top: 100px;
+    background-color: #aad4cf;
+}
+header {
+    color: white;
+    font-size: 30px;
 }
 
 .wrapper {
-    max-width: 800px;
-    margin: auto; 
+    max-width: 600px;
+    margin: 0 auto; 
 }
 
-.float {
+img {
+    width: 200px;
+    float: left;
+}
+
+/* .float {
     float: left;
     width: 25%;
-}
-nav {
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    top: 0;     /* トップに表示↓ top:0 */
-    z-index: 9;
+} */
+
+p {
+    background-color:  #aad4cf;
 }
