@@ -90,5 +90,21 @@ a:active {
     padding-right: 10px;
 }
 
+/* Forms */
 
+.contacts div{
+    padding: .2rem;
+}
+ 
+.contacts textarea {
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+
+.contacts input{
+    padding: 12px;
+    width: 95%;
+    margin: 0px ; 
+}
 
