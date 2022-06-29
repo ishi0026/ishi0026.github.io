@@ -4,56 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuka Ishii - Midterm</title>
+    <title>Lone Starfish</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <!-- use a wrapper to set as width the content-->
-    <!-- setting color? -->
     <div class="wrapper">
-        <section>
-            <!-- header has an image with text positioned over top-->
-            <!-- title -->
-            <div class="header">
-            <header>
-                <h1>Lone Starfish</h1>
-            <!-- banner -->
-                <img src="images/lone-starfish-wide.jpg" alt="wide image of starfish" id="wide_starfish_image">
-            </header>
+    <!-- top bannar and header-->
+            <!-- this is title of web page-->
+            <div class="headContainer">
+                <header>
+                <h1 class="site-title">Lone Starfish</h1>
+                </header>
+            <!-- this is banner -->
+                <img src="images/lone-starfish-wide.jpg" alt="wide image of starfish" id="wide_starfish_img">
             </div>
-        </section>
-        <!-- navigation bar -->
-        <section>
+
+        <!-- this is navigation bar -->
+        <div class="navigation" id="index">
             <nav>
                 <ul>
                     <li>
-                        <a href="#">HOME</a>
+                        <a href="#home">HOME</a>
                     </li>
                     <li>
-                        <a href="#">STORY</a>
+                        <a href="#story">STORY</a>
                     </li>
                     <li>
-                    <a href="#">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
-        </section>
-        <!-- introduction -->
+        </div>
+
+        <!-- this is introduction part of starfish-->
             <main>
            <section>
-            <div class="introduction">
-                    <h2>Life of a Starfish</h2>
-                    <img src="images/lone-starfish.jpg" alt="image of starfish" id="starfish_image">
-                </div>
-        <!-- article -->
-                    <p>
-                        Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-                    </p>
+                <h2>Life of a Starfish</h2>
+                <img src="images/lone-starfish.jpg" alt="image of starfish" id="starfish_image">
+                <p>
+                  Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
+                </p>
             </section>
+
+        <!-- this is facts of starfish and lists of items -->
             <section>
-                <div class="facts">
-                  <h2>Facts About Starfish</h2>
+                <h2>Facts About Starfish</h2>
                     <nav>
                         <ul>
                             <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
@@ -69,29 +65,25 @@
                             </li>
                         </ul>
                     </nav>
-                </div>
             </section>
+
+            <!-- this is the contact form part -->
             <section>
-                    <h2>Contact to learn more</h2>
-            <!-- <contacta -->
-                    <div class="border">
-                        <div class="contacts">
-                            <form action="thanks.html" method="get">
-                                <div classs="name">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" name="name" id="name"><br />
-                                </div>
-                                <div class="email">
-                                <label for="email">Your Email</label>
-                                <input type="email" name="email" id="email"><br />
-                               </div>
-                               <div class="message">
-                                <label for="textarea">Your Message</label><br />
-                                <textarea name="message" rows="4" cols="40"></textarea><br />
-                                </div>
+                <h2>Contact to learn more</h2>
+                    <form action="thanks.html" method="get">
+                        <div classs="name">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="email">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="message">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" rows="4" cols="40"></textarea>
+                        </div>
                            
-                        </div> 
-                    </div>
                     <!-- re-visit questions -->
                     <h3>Would you like to visit the starfish?</h3>
                     <div class ="visit">
@@ -106,9 +98,10 @@
                     <div class="button">
                         <button type="submit">Submit</button>
                     </div>
-                </form>
+                    </form>
               </main>
             </section>
+            
         <footer>
                 &copy; Lone Satrfish
         </footer>

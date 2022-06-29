@@ -1,9 +1,9 @@
 body {
-    margin-top: 100px;
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+    color: black;
+    /* margin: 0; */
+    /* padding: 0; */
 }
 
 .wrapper {
@@ -13,11 +13,15 @@ body {
 }
 
 header {
-    color: white;
-    font-size: 30px;
     position: relative;
     text-align: center;
+}
 
+
+/* change the color of text of heading  */
+.site-title {
+    color: white;
+    font-size: 30px;
 }
 
 h2,h3 {
@@ -27,13 +31,11 @@ h2,h3 {
 img {
     width: 200px;
     float: left;
+    /* padding-bottom: 15px; */
 }
-
-/* .float {
-    float: left;
-    width: 25%;
-} */
 
 p {
     background-color:  #aad4cf;
 }
+
+
