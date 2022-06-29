@@ -99,6 +99,7 @@ a:active {
 .contacts textarea {
     width: 100%;
     padding-bottom: 16px;
+    margin-bottom: 1.25rem; 
 }
 
 .contacts input{
@@ -114,6 +115,7 @@ section form div {
     margin-right: 10px;
 }
 
+/* styling form part */
 form {
     box-shadow: 0px 0px 2px 1px rgb(122, 121, 121);
     width: 90%;
@@ -121,6 +123,12 @@ form {
     margin: 0 auto;
 }
 
+section form div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /* submit button when clicked */
 button:link, a:visited {
