@@ -1,3 +1,4 @@
+/* background color of page and font styles */
 body {
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,36 +7,88 @@ body {
     /* padding: 0; */
 }
 
+/* wrap over the all contents */
 .wrapper {
     max-width: 1024px;
     margin: 0 auto; 
-    background-color: #aad4cf;
+    background-color: #cfeae7;
 }
 
-header {
+/* top image and the header style */
+.headerPart {
     position: relative;
     text-align: center;
+    color: white;
 }
+
+/* header {
+    position: relative;
+    text-align: center;
+} */
 
 
 /* change the color of text of heading  */
 .site-title {
+    position: absolute;
+    text-align: center;
     color: white;
     font-size: 30px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-h2,h3 {
+/* index navigation part */
+.navigation {
+    background-color: #cfeae7;
+    overflow: hidden;
+}
+
+/* navigation bar */
+nav ul li {
+    padding-left: 75px;
+    padding-right: 50px;
+    font-size: 1.75rem;
+    color: black;
+    text-align: center;
+    display: inline;
+    margin: 50px;
+  }
+
+a:link {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* h2,h3 {
     padding-bottom: .5rem;
-}
+} */
 
-img {
+.introduction img {
     width: 200px;
     float: left;
-    /* padding-bottom: 15px; */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-p {
-    background-color:  #aad4cf;
-}
 
 
