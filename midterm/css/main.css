@@ -161,22 +161,25 @@ section ul li::before {
 .contacts input{
     padding: 12px;
     width: 95%;
-    margin: 0px ; 
+    margin: 0px; 
 }
 
-section form div {
+/* section form div {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-}
+} */
 
 /* styling form part */
 form {
-    box-shadow: 0px 0px 2px 1px rgb(122, 121, 121);
-    width: 90%;
-    padding: 10px;
-    margin: 0 auto;
+    /* box-shadow: 0px 0px 2px 1px rgb(122, 121, 121); */
+    /* width: 90%; */
+    padding: 30px 10px 10px 20px;
+    margin: 10 15px 15px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:black;
 }
 
 section form div {
@@ -186,25 +189,26 @@ section form div {
     margin-right: 10px;
 }
 
-/* 
-section h2, h3 {
-    font-size: 2rem;
-    padding-left: 10px;
-} */
 
 /* submit button when clicked */
-button:link, a:visited {
+/* button:link, a:visited {
+    background-color: rgb(212,233,231);
+    border: none;
+    padding: 15px;
+} */
+
+button, a:hover {
     background-color: rgb(212,233,231);
     border: none;
     padding: 15px;
 }
 
 /* submit button in regular state */
-button, a:active {
+/* button, a:active {
     background-color: rgb(212,233,231);
     border: none;
     padding: 15px;
-}
+} */
 
 /* spacing around submit button */
 .button {
