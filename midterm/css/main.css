@@ -31,7 +31,7 @@ body {
     line-height: 0.98;
 }
 
-/* big starfish image */
+/* title's background starfish image */
 #wide_starfish_img {
     width: 100%;
     padding-bottom: 15px;
@@ -55,13 +55,14 @@ nav li:nth-child(2){
     padding: 0px;
 }
 
+/* nth-child removes border on third list */
 nav li:nth-child(3){
     border-right: none;
     border-left: 1px solid black;
     padding: 0px 50px 0px 100px;
 }
 
-/* navigation bar font-size, setting etc */
+/* navigation bar font-size, color, text-place, margin setting */
 nav ul li {
     padding-left: 75px;
     padding-right: 50px;
@@ -96,16 +97,46 @@ a:active {
     text-decoration: none;
 }
 
+/* main contents */
+
+/* add padding around contents */
+main {
+    padding: 1rem;
+}
+
+
 h2,h3 {
     margin: 10px;
     padding-top: 10px;
+    font-size: 2rem;
+    padding-left: 10px;
 }
 
+/* small starfish image */
 .introduction img {
     width: 200px;
     float: left;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/* paragraph wrapping around image */
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    letter-spacing: 0px;
+}
+
+.facts ul {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    letter-spacing: 0px;
 }
 
 /* Forms */
@@ -147,10 +178,11 @@ section form div {
     margin-right: 10px;
 }
 
+/* 
 section h2, h3 {
     font-size: 2rem;
     padding-left: 10px;
-}
+} */
 
 /* submit button when clicked */
 button:link, a:visited {
