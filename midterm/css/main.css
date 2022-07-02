@@ -17,26 +17,24 @@ body {
 /* top image and the header style */
 .headerPart {
     position: relative;
-    text-align: center;
+    text-align: center; 
     color: white;
-    font-size: 30px;
 }
-
-#wide_starfish_img {
-    width: 100%;
-    padding-bottom: 15px;
-}
-
 
 /* change the color of text of heading  */
 .site-title {
     position: absolute;
-    /* text-align: center;
-    color: white;
-    font-size: 30px; */
-    top: 70%;
+    font-size: 60px;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 0.98;
+}
+
+/* big starfish image */
+#wide_starfish_img {
+    width: 100%;
+    padding-bottom: 15px;
 }
 
 /* index navigation part */
@@ -63,7 +61,7 @@ nav li:nth-child(3){
     padding: 0px 50px 0px 100px;
 }
 
-/* navigation bar */
+/* navigation bar font-size, setting etc */
 nav ul li {
     padding-left: 75px;
     padding-right: 50px;
@@ -98,9 +96,10 @@ a:active {
     text-decoration: none;
 }
 
-/* h2,h3 {
-    padding-bottom: .5rem;
-} */
+h2,h3 {
+    margin: 10px;
+    padding-top: 10px;
+}
 
 .introduction img {
     width: 200px;
@@ -110,7 +109,6 @@ a:active {
 }
 
 /* Forms */
-
 .contacts div{
     padding: .2rem;
 }
@@ -147,6 +145,11 @@ section form div {
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+section h2, h3 {
+    font-size: 2rem;
+    padding-left: 10px;
 }
 
 /* submit button when clicked */
