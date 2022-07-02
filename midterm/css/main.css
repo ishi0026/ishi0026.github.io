@@ -19,20 +19,21 @@ body {
     position: relative;
     text-align: center;
     color: white;
+    font-size: 30px;
 }
 
-/* header {
-    position: relative;
-    text-align: center;
+/* #wide_starfish_img {
+    width: 100%;
+    padding-bottom: 15px;
 } */
 
 
 /* change the color of text of heading  */
 .site-title {
     position: absolute;
-    text-align: center;
+    /* text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 30px; */
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
