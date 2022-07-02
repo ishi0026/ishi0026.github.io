@@ -22,10 +22,10 @@ body {
     font-size: 30px;
 }
 
-/* #wide_starfish_img {
+#wide_starfish_img {
     width: 100%;
     padding-bottom: 15px;
-} */
+}
 
 
 /* change the color of text of heading  */
@@ -43,6 +43,24 @@ body {
 .navigation {
     background-color: #cfeae7;
     overflow: hidden;
+}
+
+/* border between navigation bar */
+nav li:nth-child(1){
+    border-left: none;
+    border-right: 1px solid black;
+    padding: 0px 100px 0px 100px;
+}
+
+nav li:nth-child(2){
+    border-style: none;
+    padding: 0px;
+}
+
+nav li:nth-child(3){
+    border-right: none;
+    border-left: 1px solid black;
+    padding: 0px 50px 0px 100px;
 }
 
 /* navigation bar */
