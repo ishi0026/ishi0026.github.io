@@ -1,2 +1,12 @@
-header photo of starfish by me 
-header photo of apple :https://~~~ 
+header photo of starfish by midterm-assets from BrightSpace
+
+set bullet for lists
+https://imdac.github.io/modules/css/css-pseudo-elements/before-after.html
+https://www.w3schools.com/cssref/sel_before.asp
+
+set site-title on the middle of photo
+https://www.w3schools.com/cssref/css3_pr_transform.asp
+
+search the theme color
+https://www.color-hex.com/
+https://www.rapidtables.com/web/color/RGB_Color.html

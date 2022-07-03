@@ -184,9 +184,9 @@ section form div {
 }
 
 
-/* fix the inside button size */
+/* fix the inside button size  rgb(212,233,231)*/
 button, a:hover {
-    background-color: rgb(212,233,231);
+    background-color:#D4E9E7;
     border: none;
     padding: 10px;
 }
