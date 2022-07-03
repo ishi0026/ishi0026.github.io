@@ -3,6 +3,8 @@ body {
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    width: 100%;
+    border-bottom:12px solid #aad4cf;
 }
 
 /* wrap over the all contents */
