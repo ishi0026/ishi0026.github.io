@@ -3,8 +3,6 @@ body {
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    /* margin: 0; */
-    /* padding: 0; */
 }
 
 /* wrap over the all contents */
@@ -28,7 +26,6 @@ body {
     top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* line-height: 1.25; */
 }
 
 /* title's background starfish image */
@@ -54,19 +51,22 @@ nav ul li{
     margin: 50px;
   }
 
-/* border between navigation bar */
+/* create border between navigation bar */
+
+/* nth-child removes right border on first list "HOME" */
 nav li:nth-child(1){
     border-left: none;
     border-right: 1px solid black;
     padding: 0px 100px 0px 100px;
 }
 
+/* nth-child removes right border on second list "STORY" */
 nav li:nth-child(2){
     border-style: none;
     padding: 0px;
 }
 
-/* nth-child removes border on third list */
+/* nth-child removes right border on third list "CONTACT" */
 nav li:nth-child(3){
     border-right: none;
     border-left: 1px solid black;
@@ -120,7 +120,7 @@ h2,h3 {
     padding-right: 10px;
 }
 
-/* paragraph wrapping around image */
+/* set paragraph place wrapping around image */
 p {
     padding-left: 15px;
     padding-right: 15px;
@@ -148,7 +148,16 @@ section ul li::before {
     padding-right: 10px; 
 }
 
-/* Forms */
+/* Forms part */
+
+form {
+    padding: 30px 10px 10px 20px;
+    margin: 10px 15px 15px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:black;
+}
+
 .contacts div{
     padding: .2rem;
 }
@@ -159,20 +168,11 @@ section ul li::before {
     margin-bottom: 1.25rem; 
 }
 
-/* ラジオボタンとの位置関係の原因↓　これがinput全体にあたっていたため文字間隔が開いてしまった */
+/* place the forms*/
 .contacts #name, #email, #message {
     padding: 12px;
     width: 90%;
     margin: 0px; 
-}
-
-/* styling form part */
-form {
-    padding: 30px 10px 10px 20px;
-    margin: 10px 15px 15px 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color:black;
 }
 
 /* the margin around words in form box*/
@@ -184,34 +184,12 @@ section form div {
 }
 
 
-/* tried to fix words position but finally it came out just outside of div */
-/* section form h3 {
-    margin: 10px;
-    padding-top: 10px;
-    font-size: 2rem;
-    padding-left: 10px;
-} */
-
-/* submit button when clicked */
-/* button:link, a:visited {
-    background-color: rgb(212,233,231);
-    border: none;
-    padding: 15px;
-} */
-
 /* fix the inside button size */
 button, a:hover {
     background-color: rgb(212,233,231);
     border: none;
     padding: 10px;
 }
-
-/* submit button in regular state */
-/* button, a:active {
-    background-color: rgb(212,233,231);
-    border: none;
-    padding: 15px;
-} */
 
 /* spacing around submit button and write border */
 .button {
