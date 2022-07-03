@@ -131,6 +131,7 @@ h2,h3 {
     letter-spacing: 0px;
 }
 
+/* set the lists possition */
 .facts ul {
     padding-left: 15px;
     padding-right: 15px;
@@ -164,7 +165,6 @@ section ul li::before {
     margin: 0px; 
 }
 
-
 /* styling form part */
 form {
     /* box-shadow: 0px 0px 2px 1px rgb(122, 121, 121); */
@@ -184,13 +184,22 @@ section form div {
     margin-right: 10px;
 }
 
+/* trying to fix button and words */
 label {
     padding: 0;
     margin: 0;
-
     display:inline-block;
 }
 
+input[type="radio"] {
+    position: relative;
+    margin-right: -3px;
+    margin-left: 0;
+    right: 0px;
+    left: 0px;
+
+  }
+/* from here */
 
 /* submit button when clicked */
 /* button:link, a:visited {
@@ -199,10 +208,11 @@ label {
     padding: 15px;
 } */
 
+/* fix the inside button size */
 button, a:hover {
     background-color: rgb(212,233,231);
     border: none;
-    padding: 15px;
+    padding: 10px;
 }
 
 /* submit button in regular state */
@@ -212,7 +222,7 @@ button, a:hover {
     padding: 15px;
 } */
 
-/* spacing around submit button */
+/* spacing around submit button and write border */
 .button {
     padding-top: 1rem;
     padding-bottom: 10px;
