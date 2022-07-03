@@ -168,16 +168,14 @@ section ul li::before {
 
 /* styling form part */
 form {
-    /* box-shadow: 0px 0px 2px 1px rgb(122, 121, 121); */
-    /* width: 90%; */
     padding: 30px 10px 10px 20px;
-    margin: 10 15px 15px 20px;
+    margin: 10px 15px 15px 20px;
     border-width: 2px;
     border-style: solid;
     border-color:black;
 }
 
-/* the margin in form box*/
+/* the margin around words in form box*/
 section form div {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -185,12 +183,14 @@ section form div {
     margin-right: 10px;
 }
 
-section form h3 {
+
+/* tried to fix words position but finally it came out just outside of div */
+/* section form h3 {
     margin: 10px;
     padding-top: 10px;
     font-size: 2rem;
     padding-left: 10px;
-}
+} */
 
 /* submit button when clicked */
 /* button:link, a:visited {
@@ -215,12 +215,12 @@ button, a:hover {
 
 /* spacing around submit button and write border */
 .button {
-    padding-top: 1rem;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
     border: 2px solid black;
-    margin-right: 880px;
-    margin-left: 10px;
+    margin-right: 842px;
+    margin-left: 15px;
     padding: 2px;
 }
 
