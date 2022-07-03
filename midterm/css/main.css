@@ -149,7 +149,6 @@ section ul li::before {
 }
 
 /* Forms part */
-
 form {
     padding: 30px 10px 10px 20px;
     margin: 10px 15px 15px 20px;
@@ -173,6 +172,7 @@ form {
     padding: 12px;
     width: 90%;
     margin: 0px; 
+    border-color: light-gray;
 }
 
 /* the margin around words in form box*/
