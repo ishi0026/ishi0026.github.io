@@ -177,7 +177,7 @@ form {
     border-color:black;
 }
 
-/* the side of form box */
+/* the margin in form box*/
 section form div {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -185,22 +185,12 @@ section form div {
     margin-right: 10px;
 }
 
-/* trying to fix button and words */
-/* label {
-    padding: 0;
-    margin: 0;
-    display:inline-block;
-} */
-
-/* input[type="radio"] {
-    position: relative;
-    margin: 0em;
-    padding: 1px 2px;
-    border-width: 2px;
-    display:inline-block;
-  } */
-
-/* from here */
+section form h3 {
+    margin: 10px;
+    padding-top: 10px;
+    font-size: 2rem;
+    padding-left: 10px;
+}
 
 /* submit button when clicked */
 /* button:link, a:visited {
