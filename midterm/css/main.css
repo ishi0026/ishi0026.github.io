@@ -159,9 +159,10 @@ section ul li::before {
     margin-bottom: 1.25rem; 
 }
 
-.contacts input{
+/* ラジオボタンとの位置関係の原因↓　これがinput全体にあたっていたため文字間隔が開いてしまった */
+.contacts #name, #email, #message {
     padding: 12px;
-    width: 95%;
+    width: 90%;
     margin: 0px; 
 }
 
@@ -185,20 +186,20 @@ section form div {
 }
 
 /* trying to fix button and words */
-label {
+/* label {
     padding: 0;
     margin: 0;
     display:inline-block;
-}
+} */
 
-input[type="radio"] {
+/* input[type="radio"] {
     position: relative;
-    margin-right: -3px;
-    margin-left: 0;
-    right: 0px;
-    left: 0px;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    display:inline-block;
+  } */
 
-  }
 /* from here */
 
 /* submit button when clicked */
