@@ -1,0 +1,26 @@
+/* styling the basic part */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+/* changable */
+/*inside-box(welcome part) full screen size no margin*/
+.inside-box {
+    width: 600px;
+    margin: auto;
+    height: auto;
+}
+
+/*about, service class to separate section that have margin on the sides*/
+.about, .service  {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+}
