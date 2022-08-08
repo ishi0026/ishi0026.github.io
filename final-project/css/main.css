@@ -18,6 +18,36 @@ header {
     background-color: #222;
 }
 
+/* star media logo on the header part */
+.logo {
+    background-color: #c78c06;
+    width: 100%;
+    margin: auto;
+}
+
+/* setting style for navigation bar */
+nav {
+    text-align: center;
+}
+
+ nav li {
+    padding: 1rem;
+    margin: auto;
+}
+
+nav li a {
+    color: #c78c06;
+    width: 100%;
+}
+
+nav li:hover {
+    background-color: #c78c06;
+}
+
+nav li a:hover{
+    color: #222;
+}
+
 footer {
     background-color: #222;
     color: #c78c06;
@@ -34,6 +64,7 @@ footer {
     height: fit-content;
 }
 
+
 /* changable */
 /*inside-box(welcome part) full screen size no margin*/
 .inside-box {
@@ -41,10 +72,6 @@ footer {
     height: auto;
 }
 
-.logo {
-    width: 100%;
-    height: auto;
-}
 
 .welcome {
     display: block;
