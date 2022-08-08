@@ -11,6 +11,29 @@ body {
     margin: 0;
 }
 
+/* set header includes navigation bar to full size */
+header {
+    margin:auto;
+    width: 600px;
+    background-color: #222;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    width: 100%;
+    padding: 1rem 4rem;
+    margin: auto;
+}
+
+/* wrapper class for centered contents */
+.wrapper {
+    width: 600px;
+    margin: auto;
+    align-content: center;
+    height: fit-content;
+}
+
 /* changable */
 /*inside-box(welcome part) full screen size no margin*/
 .inside-box {
@@ -85,9 +108,26 @@ h1 {
     background-color: rgba(34, 34, 34, 0.5); 
 }
 
-/*about, service class to separate section that have margin on the sides*/
-.about, .service  {
+/*about class to separate section that have margin on the sides*/
+.about {
+    background-color: #ffe6ac;
+    box-sizing: border-box;
     width: 100%;
     margin: auto;
-    height: fit-content;
+    padding: 1rem;
+    height: auto;
+}
+
+.about img {
+    width: 100%;
+    margin-top: 1rem;
+    height: auto;
+}
+
+.about h2 {
+    padding: 0.5rem;
+}
+
+.about p {
+    padding: 0.5rem;
 }
