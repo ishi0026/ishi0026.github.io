@@ -3,19 +3,86 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:0;
     margin: 0;
 }
 
 /* changable */
 /*inside-box(welcome part) full screen size no margin*/
 .inside-box {
-    width: 600px;
-    margin: auto;
+    margin: 0 auto;
     height: auto;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.welcome {
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    height: 600px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+/* background box area on welcome words */
+.inside-box {
+    position: absolute;
+    background-color:rgba(14, 1, 0, .60);
+    width: 100%;
+    height: 560px;
+}
+
+/* base parameters for the headings and paragraphs */
+h1 {
+    font-size: 4.25rem;
+    padding: 30px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    line-height: 100px;
+    max-height: 500px;
+}
+
+.welcome {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.welcome img {
+    max-width: 100%;
+} 
+
+.inside-box h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+.inside-box p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* styling the content in box on the main image*/
+.inside-box {
+    position: absolute;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    top: 100px;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.5); 
 }
 
 /*about, service class to separate section that have margin on the sides*/
