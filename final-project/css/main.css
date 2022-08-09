@@ -107,7 +107,6 @@ footer {
     width: 600px;
     margin: auto;
     height: auto;
-    position: center;
 }
 
 /*inside-box(welcome part) full screen size 0 margin*/
@@ -262,4 +261,35 @@ h3 {
     background-color: #ffe6ac;
     margin-bottom: 1rem;
     padding: 1rem;
+}
+
+/* Ourvision section with wrapper on background full-sized image  */
+.our-vision {
+    background-image: url("../images/vision.jpg");
+    margin: 1rem auto;
+    background-size: cover;
+    width: 100%;
+    color: white;
+    padding: 2rem;
+}
+
+.wrapper-ourvision {
+    width: 600px;
+    margin: auto;
+}
+
+
+.wrapper-ourvision h3, p {
+    padding-left: 0;
+}
+
+.button3 {
+    background-color: #222;
+    border:#c78c06 solid 1px;
+    padding: 1.5rem;
+    color:white;
+}
+
+.button3 i {
+    padding-left: 0.5rem;
 }
