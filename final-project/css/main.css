@@ -13,7 +13,7 @@ body {
 
 /* set header includes navigation bar to full size */
 header {
-    margin:auto;
+    margin: auto;
     width: 600px;
     background-color: #222;
 }
@@ -30,7 +30,7 @@ nav {
     text-align: center;
 }
 
- nav li {
+nav li {
     padding: 1rem;
     margin: auto;
 }
@@ -38,6 +38,7 @@ nav {
 nav li a {
     color: #c78c06;
     width: 100%;
+    font-weight: 500;
 }
 
 nav li:hover {
@@ -64,54 +65,65 @@ footer {
     height: fit-content;
 }
 
+.wrapper-bleed {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+}
 
-/* changable */
-/*inside-box(welcome part) full screen size no margin*/
-.inside-box {
-    margin: 0 auto;
+/* below changable */
+.searchbox input {
+    width:90%;
+    height: 30px;
+    margin: 0rem 1rem 1rem 1rem;
+    border: #222 solid 1px;
+}
+
+
+/*Clearfix to fix float issues*/
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+main {
+    margin:auto;
+    height: fit-content;
+}
+
+/* header part */
+button {
+    border: #c78c06;
+    background-color: #222;
+    width: fit-content;
+    height: fit-content;
+}
+
+button i {
+    color:#c78c06;
+    margin-left: 0;
+    padding: 0.25rem;
+}
+
+
+.welcome {
+    width: 600px;
+    margin: auto;
     height: auto;
 }
 
-
-.welcome {
-    display: block;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-content: center;
-    height: 600px;
-    padding-bottom: 20px;
-    color: white;
-}
-
-/* background box area on welcome words */
+/*inside-box(welcome part) full screen size 0 margin*/
 .inside-box {
-    position: absolute;
-    background-color:rgba(14, 1, 0, .60);
     width: 100%;
-    height: 560px;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
-/* base parameters for the headings and paragraphs */
-h1 {
-    font-size: 4.25rem;
-    padding: 30px;
-    padding-bottom: 0px;
-    margin-top: 20px;
-    line-height: 100px;
-    max-height: 500px;
-}
-
-.welcome {
-    position: relative;
-    text-align: left;
-    color: white;
-}
-
-.welcome img {
-    max-width: 100%;
-} 
 
 .inside-box h1 {
     font-size: 2.5rem;
@@ -124,15 +136,51 @@ h1 {
     padding-bottom: 1rem;
 }
 
-/* styling the content in box on the main image*/
-.inside-box {
-    position: absolute;
+.banner {
+    background-color: #2229;
+    height: 325px;
+    align-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    z-index: 1; 
+    float: left;
+    padding: 1rem;
+}
+
+/* basic design for the headings and paragraphs */
+h1 {
+    font-size: 4.25rem;
+    padding: 30px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    line-height: 100px;
+    max-height: 500px;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    color: white;
+}
+
+.button1 {
+    background-color: #c78c06;
+    color: #222;
+    padding: 1rem;
+}
+
+.button1 i {
     padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    top: 100px;
-    width: 100%;
-    background-color: rgba(34, 34, 34, 0.5); 
 }
 
 /*about class to separate section that have margin on the sides*/
@@ -157,4 +205,4 @@ h1 {
 
 .about p {
     padding: 0.5rem;
-}
+} 
