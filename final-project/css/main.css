@@ -167,7 +167,11 @@ p {
     margin-bottom: 1rem;
 }
 
-.banner p {
+.banner h1{
+    color: white;
+}
+
+.banner p{
     color: white;
 }
 
@@ -441,5 +445,38 @@ thead {
         max-width: 1200px;
         padding: 2rem;
     }
+
+    .navigation{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .logo{
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+        background-color: #222;
+        align-items: center;
+    }
+
+    nav {
+        height: auto;
+        text-align: center;
+        display: flex; 
+        align-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav li {
+        font-size: 0.80rem;
+    }
+
+
 
 }
