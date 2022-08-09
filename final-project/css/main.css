@@ -605,7 +605,35 @@ thead {
 
     .member2box img {
         width: 50%;
+
     }
 
+    .contact {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+        grid-template-areas:
+            "title title"
+            "message location"
+            "chart chart"
+    }
 
+    .contact .contact-title {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        grid-area: title;
+    }
+
+    .contact .send-message {
+        grid-area: send-message;
+    }
+
+    .contact .chart {
+        grid-area: chart;
+    }
+
+    .contact .location {
+        grid-area: map;
+    }
 }
