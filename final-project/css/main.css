@@ -287,9 +287,73 @@ h3 {
     background-color: #222;
     border:#c78c06 solid 1px;
     padding: 1.5rem;
-    color:white;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.button3 a {
+width: 100%;
+color: white;
+height: fit-content;
 }
 
 .button3 i {
     padding-left: 0.5rem;
 }
+
+
+/* Team part with class for each member. It is useful to apply grid */
+.our-team {
+    height: fit-content;
+    padding-bottom: 1rem;
+}
+
+.our-team h2, h3 {
+    padding: 1rem;
+}
+
+.member1, .member2 {
+    background-color: #ffe6ac;
+    height: fit-content;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* style for line under member's name */
+hr {
+    height: 2px;
+    background-color: #c78c06;
+    border: none;
+    width: 95%;
+    margin-bottom: 1rem;
+}
+
+.member1 h4, p {
+    padding-left: 1rem;
+}
+
+.member2 h4, p {
+    padding-left: 1rem;
+}
+
+/* Contact part with specific classes for inner elements and contents */
+.contact {
+    height: fit-content;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.contacttitle {
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
+.form h3 {
+    padding-bottom: 1rem;
+}
+
+.send-message {
+    width: auto;
+    height: fit-content;
+}
+
