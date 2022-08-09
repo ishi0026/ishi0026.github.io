@@ -206,3 +206,60 @@ p {
     padding: 0.8rem;
 } 
 
+/* services section with full width. Inner items apply specific class to use grid */
+
+.services {
+    width: 100%;
+    margin: auto;
+}
+
+.services h2 {
+    margin-bottom: 0.5rem;
+}
+
+.services img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.button2 {
+    background-color: #222;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.button2 a {
+    width: 100%;
+    color: white;
+    height: fit-content;
+}
+
+.button2 i {
+    padding-left: 1rem;
+}
+
+.digital-transformationarea, 
+.marketingarea, 
+.video-productionarea, 
+.web-developmentarea, 
+.printarea{
+    width: 100%;
+    margin-bottom: 1rem;
+    align-content: center;
+    display: inline-block;
+}
+
+.digital,
+.marketing,
+.video,
+.web,
+.print{
+    background-color: #ffe6ac;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
