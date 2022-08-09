@@ -357,3 +357,89 @@ hr {
     height: fit-content;
 }
 
+.form input {
+    width: 100%;
+    margin: 0.25rem 1rem 0 0 ;
+    padding-right: 0;
+    border: #222 solid 1px;
+}
+
+.name input,
+.email input {
+    height: 40px;
+}
+
+.message input {
+    height: 120px;
+}
+
+.form button {
+    width: 60px;
+    height: 30px;
+    margin: auto;
+    border: #c78c06 solid 1px;
+}
+
+/* schedule table  */
+.chart {
+    width: 100%;
+    height: fit-content;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.chart h3 {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border: #222 solid 1px;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: #222 solid 1px;
+    padding: 1rem 0 1rem 1rem;
+}
+
+thead {
+    background-color: #ffe6ac;
+}
+
+.submit-button {
+    color: #c78c06;
+    font-weight:  800;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* loation section */
+.location {
+    width: 100%;
+}
+
+.location h3 {
+    margin-bottom: 1rem;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 760px) {
+
+    html {
+        font-size: 18px;
+    }
+
+    header {
+        width: 100%;
+        max-width: 1200px;
+        padding: 2rem;
+    }
+
+}
