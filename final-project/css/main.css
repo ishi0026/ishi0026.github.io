@@ -10,6 +10,19 @@ body {
     padding:0;
     margin: 0;
 }
+/* wrapper class for centered contents */
+.wrapper {
+    width: 600px;
+    margin: auto;
+    align-content: center;
+    height: fit-content;
+}
+
+.wrapper-bleed {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+}
 
 /* set header includes navigation bar to full size */
 header {
@@ -48,32 +61,21 @@ nav li:hover {
 nav li a:hover{
     color: #222;
 }
-
-footer {
+button {
+    border: #c78c06;
     background-color: #222;
-    color: #c78c06;
-    width: 100%;
-    padding: 1rem 4rem;
-    margin: auto;
-}
-
-/* wrapper class for centered contents */
-.wrapper {
-    width: 600px;
-    margin: auto;
-    align-content: center;
+    width: fit-content;
     height: fit-content;
 }
 
-.wrapper-bleed {
-    width: 100%;
-    margin: auto;
-    height: fit-content;
+button i {
+    color:#c78c06;
+    margin-left: 0;
+    padding: 0.25rem;
 }
-
 /* below changable */
 .searchbox input {
-    width:90%;
+    width: 90%;
     height: 30px;
     margin: 0rem 1rem 1rem 1rem;
     border: #222 solid 1px;
@@ -92,29 +94,25 @@ main {
     height: fit-content;
 }
 
-/* header part */
-button {
-    border: #c78c06;
+footer {
     background-color: #222;
-    width: fit-content;
-    height: fit-content;
+    color: #c78c06;
+    width: 100%;
+    padding: 1rem 4rem;
+    margin: auto;
 }
 
-button i {
-    color:#c78c06;
-    margin-left: 0;
-    padding: 0.25rem;
-}
-
-
+/* header part */
 .welcome {
     width: 600px;
     margin: auto;
     height: auto;
+    position: center;
 }
 
 /*inside-box(welcome part) full screen size 0 margin*/
 .inside-box {
+    background-image: url("../images/main-banner.jpg");
     width: 100%;
     margin: auto;
     background-position: center;
@@ -123,7 +121,6 @@ button i {
     background-repeat: no-repeat;
     z-index: -1;
 }
-
 
 .inside-box h1 {
     font-size: 2.5rem;
@@ -146,6 +143,8 @@ button i {
     float: left;
     padding: 1rem;
 }
+
+
 
 /* basic design for the headings and paragraphs */
 h1 {
@@ -200,9 +199,10 @@ p {
 }
 
 .about h2 {
-    padding: 0.5rem;
+    padding: 0.8rem;
 }
 
 .about p {
-    padding: 0.5rem;
+    padding: 0.8rem;
 } 
+
