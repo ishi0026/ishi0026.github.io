@@ -477,6 +477,135 @@ thead {
         font-size: 0.80rem;
     }
 
+    .searchbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .wrapper-aboutus{
+        width: 100%;
+        margin: auto;
+        height: auto;
+        max-width: 1200px;
+    }
+
+    .wrapper {
+        width: 90%;
+        margin: auto;
+        height: auto;
+        max-width: 1200px;
+    }
+
+    .p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    .inside-box {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .banner {
+        background-color: #222;
+        width: 90%;
+        margin-left: 2rem;
+    }
+    
+    .about {
+        padding-left: 2rem;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 1rem;
+
+    }
+
+    .about img {
+        object-fit: cover;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;;
+    }
+
+    .about-text {
+        height: fit-content;
+    }
+
+    .services {
+        padding-left: 2rem;
+        height: fit-content;
+        display: grid;
+        grid-gap: 0.5rem;
+        justify-content: space-around;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+            "services services services services services services"
+            "digital digital digital marketing marketing marketing"
+            "video video web web print print";
+    }
+
+    .services-title {
+        margin-left: 1rem;
+        grid-area: services;
+    }
+
+    .digital-transformationarea {
+        grid-area: digital;
+    }
+
+    .marketingarea {
+        grid-area: marketing;
+    }
+
+    .video-productionarea {
+        grid-area: video;
+    }
+
+    .web-developmentarea {
+        grid-area: web;
+    }
+
+    .printarea {
+        grid-area: print;
+    }
+
+    .button2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .our-team {
+        height: fit-content;
+    }
+
+    .member1box{
+        height: fit-content;
+        display: flex;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .member1box img {
+        width: 50%;
+    }
+
+    .member1 {
+        width: 50%;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .member2box {
+        height: fit-content;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 0;
+    }
+
+    .member2box img {
+        width: 50%;
+    }
 
 
 }
