@@ -347,14 +347,15 @@ hr {
     padding: 0.5rem;
 }
 
-.contacttitle {
+.contact-title {
     margin-bottom: 1rem;
     margin-left: 0;
 }
 
-.form h3 {
+/* form section */
+/* .form h3 {
     padding-bottom: 1rem;
-}
+} */
 
 .send-message {
     width: auto;
@@ -590,7 +591,8 @@ thead {
         width: 50%;
     }
 
-    .member1 {
+    .member1,
+    .member2 {
         width: 50%;
         height: auto;
         margin-bottom: 0;
@@ -625,8 +627,8 @@ thead {
         grid-area: title;
     }
 
-    .contact .send-message {
-        grid-area: send-message;
+    .contact .form {
+        grid-area: form;
     }
 
     .contact .chart {
