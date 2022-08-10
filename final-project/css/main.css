@@ -10,7 +10,8 @@ body {
     padding:0;
     margin: 0;
 }
-/* wrapper class for centered contents */
+
+/* wrapper class for centered contents and make full screen*/
 .wrapper {
     width: 600px;
     margin: auto;
@@ -18,6 +19,7 @@ body {
     height: fit-content;
 }
 
+/* .wrapper-bleed class to apply same style in separeta section in team*/
 .wrapper-bleed {
     width: 100%;
     margin: auto;
@@ -26,19 +28,19 @@ body {
 
 /* set header includes navigation bar to full size */
 header {
-    margin: auto;
     width: 600px;
+    margin: auto;
     background-color: #222;
 }
 
-/* star media logo on the header part */
+/* apply specific style on star media logo in the header part */
 .logo {
     background-color: #c78c06;
     width: 100%;
     margin: auto;
 }
 
-/* setting style for navigation bar */
+/* setting style for navigation bar for mobile style */
 nav {
     text-align: center;
 }
@@ -68,30 +70,32 @@ a:visited {
     text-decoration: none;
 }
 
-/* below changable */
-/* searchbox area */
+
+/* searchbox area to style button and input */
 button {
-    border: #c78c06;
+    border: #c78c06 solid 1px;
     background-color: #222;
     width: fit-content;
     height: fit-content;
 }
 
+/* =======!!!!! a little bit different */
 button i {
     color:#c78c06;
     margin-left: 0;
-    padding: 0.25rem;
+    padding: 0.5rem;
 }
 
 .searchbox input {
     width: 90%;
     height: 30px;
-    margin: 0rem 1rem 1rem 1rem;
+    margin: 1rem 0rem 1rem 1rem;
+    padding-right: 0rem;
     border: #222 solid 1px;
 }
 
 
-/*Clearfix to fix float issues*/
+/*Clearfix to remove float*/
 .clearfix::after {
     content: "";
     display: block;
@@ -112,16 +116,15 @@ footer {
 }
 
 /* header part */
-/*inside-box(welcome part) full screen size 0 margin*/
+/*two classes to style banner, background with full screen size and different margin*/
 .inside-box {
-    background-image: url("../images/main-banner.jpg");
+    background-image: url("../images/main-banner.jpg");/*img for background to overlap content*/
     width: 100%;
     margin: auto;
     background-position: center;
     background-size: cover;
     height: 450px;
     background-repeat: no-repeat;
-    z-index: -1;
 }
 
 .inside-box h1 {
@@ -136,18 +139,18 @@ footer {
 }
 
 .banner {
+    z-index: 1;     /* put welcome banner on the cover*/
     background-color: #2229;
-    height: 325px;
+    height: 335px;
     align-content: space-around;
     margin-top: 3rem;
-    z-index: 1; 
     float: left;
     padding: 1rem;
 }
 
 
 
-/* basic design for the headings and paragraphs */
+/* basic design for the headings and paragraphs in every part of padding and margin */
 h1 {
     font-size: 4rem;
     padding: 30px;
@@ -177,6 +180,7 @@ p {
     color: white;
 }
 
+/* button1 is for welcome part button */
 .button1 {
     background-color: #c78c06;
     color: #222;
@@ -194,7 +198,7 @@ p {
     padding-left: 1rem;
 }
 
-/*about class to separate section that have margin on the sides*/
+/*about class in one container to style */
 .about {
     background-color: #ffe6ac;
     box-sizing: border-box;
@@ -218,8 +222,7 @@ p {
     padding: 0.8rem;
 } 
 
-/* services section with full width. Inner items apply specific class to use grid */
-
+/* Full width service section. Inner items apply a specific class to use the grid for desktop window*/
 .services {
     width: 100%;
     margin: auto;
@@ -239,23 +242,25 @@ h3 {
     font-weight: bold;
 }
 
+/* button2 is for all services button */
 .button2 {
     background-color: #222;
     padding: 1rem;
     margin-top: 1rem;
-    display: inline-block;
+    display: inline-block; /*set content in one line */
 }
 
 .button2 a {
     width: 100%;
     color: white;
-    height: fit-content;
+    height: fit-content; /* Use fit-content to specify box(button) size*/
 }
 
 .button2 i {
     padding-left: 1rem;
 }
 
+/* style each box's in the services */
 .digital-transformationarea, 
 .marketingarea, 
 .video-productionarea, 
@@ -267,6 +272,7 @@ h3 {
     display: inline-block;
 }
 
+/* style each box elements in the services */
 .digital,
 .marketing,
 .video,
@@ -279,7 +285,7 @@ h3 {
 
 /* Ourvision section with wrapper on background full-sized image  */
 .our-vision {
-    background-image: url("../images/vision.jpg");
+    background-image: url("../images/vision.jpg");/*img for background to overlap content*/
     margin: 1rem auto;
     background-size: cover;
     width: 100%;
@@ -297,6 +303,7 @@ h3 {
     padding-left: 0;
 }
 
+/* button3 is for vision section button */
 .button3 {
     background-color: #222;
     border:#c78c06 solid 1px;
@@ -316,7 +323,7 @@ height: fit-content;
 }
 
 
-/* Team part with class for each member. It is useful to apply grid */
+/* Team part with class for each member. It is useful to apply grid in desktop window*/
 .our-team {
     height: fit-content;
     padding-bottom: 1rem;
@@ -333,7 +340,7 @@ height: fit-content;
     margin-bottom: 1rem;
 }
 
-/* style for line under member's name */
+/* style for color line under member's name */
 hr {
     height: 2px;
     background-color: #c78c06;
@@ -350,7 +357,7 @@ hr {
     padding-left: 1rem;
 }
 
-/* Contact part with specific classes for inner elements and contents */
+/* Contact part with specific classes for every inner elements and contents */
 .contact {
     height: fit-content;
     margin-bottom: 1rem;
@@ -447,6 +454,7 @@ thead {
 }
 
 
+/* setting min-width media query for the screen size of 760px and above */
 @media screen and (min-width: 760px) {
 
     html {
@@ -455,19 +463,19 @@ thead {
 
     header {
         width: 100%;
-        max-width: 1200px;
+        max-width: 1200px;/*set the maximum width of the container 1200px*/
         padding: 2rem;
     }
 
     .navigation{
-        display: flex;
-        justify-content: space-between;
-        max-width: 1200px;
+        display: flex; /*display header elements horizontally*/
+        justify-content: space-between; /* make even space for elements*/
+        max-width: 1200px; /*set the maximum width of the container 1200px*/
         margin: auto;
     }
 
     .logo{
-        width: fit-content;
+        width: fit-content; 
         margin: 0;
         padding: 0;
         background-color: #222;
@@ -522,10 +530,13 @@ thead {
 
     .banner {
         background-color: #2229;
-        width: 90%;
+        width: 94%;
         margin-left: 2rem;
+        margin-right: 2rem;
+
     }
     
+    /* use grid to put images and texts in one line */
     .about {
         padding-left: 2rem;
         height: fit-content;
@@ -536,7 +547,6 @@ thead {
     }
 
     .about img {
-        object-fit: cover;
         margin-right: 0.5rem;
         margin-left: 0.5rem;;
     }
@@ -545,6 +555,7 @@ thead {
         height: fit-content;
     }
 
+    /* use grid to put services boxes in 5 position */
     .services {
         padding-left: 2rem;
         height: fit-content;
@@ -563,6 +574,7 @@ thead {
         grid-area: services;
     }
 
+    /* apply each grid area name on the template */
     .digital-transformationarea {
         grid-area: digital;
     }
@@ -583,6 +595,7 @@ thead {
         grid-area: print;
     }
 
+    /* make button2 edge to edge in each box */
     .button2 {
         width: 100%;
         text-align: center;
@@ -592,6 +605,7 @@ thead {
         height: fit-content;
     }
 
+    /* use flex to display member information in one line */
     .member1box{
         height: fit-content;
         display: flex;
@@ -613,7 +627,7 @@ thead {
     .member2box {
         height: fit-content;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row-reverse; /*put member2 asymmetry to member1, applying different direction*/
         padding-bottom: 0;
     }
 
