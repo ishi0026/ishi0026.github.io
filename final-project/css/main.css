@@ -61,6 +61,15 @@ nav li:hover {
 nav li a:hover{
     color: #222;
 }
+
+/* erase the line under the text */
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+/* below changable */
+/* searchbox area */
 button {
     border: #c78c06;
     background-color: #222;
@@ -73,7 +82,7 @@ button i {
     margin-left: 0;
     padding: 0.25rem;
 }
-/* below changable */
+
 .searchbox input {
     width: 90%;
     height: 30px;
@@ -103,12 +112,6 @@ footer {
 }
 
 /* header part */
-.welcome {
-    width: 600px;
-    margin: auto;
-    height: auto;
-}
-
 /*inside-box(welcome part) full screen size 0 margin*/
 .inside-box {
     background-image: url("../images/main-banner.jpg");
@@ -137,7 +140,6 @@ footer {
     height: 325px;
     align-content: space-around;
     margin-top: 3rem;
-    margin-bottom: 2rem;
     z-index: 1; 
     float: left;
     padding: 1rem;
@@ -147,7 +149,7 @@ footer {
 
 /* basic design for the headings and paragraphs */
 h1 {
-    font-size: 4.25rem;
+    font-size: 4rem;
     padding: 30px;
     padding-bottom: 0px;
     margin-top: 20px;
@@ -179,6 +181,13 @@ p {
     background-color: #c78c06;
     color: #222;
     padding: 1rem;
+    display: inline-block;
+}
+
+.button1 a {
+    width: 100%;
+    color: #222;
+    height: fit-content;
 }
 
 .button1 i {
@@ -217,6 +226,7 @@ p {
 }
 
 .services h2 {
+    margin-top: 0.8rem;
     margin-bottom: 0.5rem;
 }
 
@@ -348,14 +358,15 @@ hr {
 }
 
 .contact-title {
+    margin-top: 0.8rem;
     margin-bottom: 1rem;
     margin-left: 0;
 }
 
 /* form section */
-/* .form h3 {
+.messagearea h3 {
     padding-bottom: 1rem;
-} */
+}
 
 .send-message {
     width: auto;
@@ -368,6 +379,7 @@ hr {
     padding-right: 0;
     border: #222 solid 1px;
 }
+
 
 .name input,
 .email input {
@@ -438,7 +450,7 @@ thead {
 @media screen and (min-width: 760px) {
 
     html {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     header {
@@ -475,7 +487,7 @@ thead {
     }
 
     nav li {
-        font-size: 0.80rem;
+        font-size: 1rem;
     }
 
     .searchbox {
@@ -617,8 +629,8 @@ thead {
         grid-gap: 0.5rem;
         grid-template-areas:
             "title title"
-            "message location"
-            "chart chart"
+            "messagearea location"
+            "chart chart";
     }
 
     .contact .contact-title {
@@ -627,8 +639,8 @@ thead {
         grid-area: title;
     }
 
-    .contact .form {
-        grid-area: form;
+    .contact .messagearea {
+        grid-area: messagearea;
     }
 
     .contact .chart {
@@ -636,6 +648,6 @@ thead {
     }
 
     .contact .location {
-        grid-area: map;
+        grid-area: location;
     }
 }
