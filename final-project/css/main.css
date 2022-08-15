@@ -288,6 +288,8 @@ h3 {
     background-image: url("../images/vision.jpg");/*img for background to overlap content*/
     margin: 1rem auto;
     background-size: cover; /*Scale the image as large as possible to fill the container and stretch the image as needed*/
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     color: white;
     padding: 2rem;
@@ -604,8 +606,9 @@ thead {
         text-align: center;
     }
     
+   
     .wrapper-ourvision {
-        width: 70%;
+        width: 85%;
         margin: auto;
     }
 
@@ -642,7 +645,6 @@ thead {
 
     .member2box img {
         width: 50%;
-
     }
 
     .contact {
@@ -673,5 +675,5 @@ thead {
     .contact .location {
         grid-area: location;
     }
-    
+
 }
