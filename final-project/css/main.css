@@ -115,11 +115,12 @@ footer {
     padding: 1rem 4rem;
     margin: auto;
 }
-/* basic part end, these can not change */
+/* basic part end, these do not change */
 
 /* header part  */
 /*two classes to style banner, background with full screen size and different margin*/
 .inside-box {
+    /*z-index: -1; /*set this elements under the gray-box*/
     background-image: url("../images/main-banner.jpg");/*img for background to overlap content*/
     width: 100%;
     margin: auto;
@@ -141,7 +142,7 @@ footer {
 }
 
 .banner {
-    z-index: 1;     /* put welcome banner on the cover*/
+    z-index: 1;      /*put welcome banner and overlap the cover text*/
     background-color: #2229;
     height: 335px;
     align-content: space-around;
@@ -152,7 +153,7 @@ footer {
 
 
 
-/* basic design for the headings and paragraphs in every part of padding and margin */
+/* basic design rule for the headings and paragraphs in every part of padding and margin */
 h1 {
     font-size: 4rem;
     padding: 30px;
@@ -187,7 +188,7 @@ p {
     background-color: #c78c06;
     color: #222;
     padding: 1rem;
-    display: inline-block;
+    display: inline-block; /* fit the button size to the text*/
 }
 
 .button1 a {
@@ -200,10 +201,10 @@ p {
     padding-left: 1rem;
 }
 
-/*about class in one container to style */
+/*about section in one container to style specific style*/
 .about {
     background-color: #ffe6ac;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Take margins and padding within the width and height specified for the element*/
     width: 100%;
     margin: auto;
     padding: 1rem;
@@ -216,13 +217,10 @@ p {
     height: auto;
 }
 
-.about h2 {
-    padding: 0.8rem;
-}
-
+.about h2,
 .about p {
     padding: 0.8rem;
-} 
+}
 
 /* Full width service section. Inner items apply a specific class to use the grid for desktop window*/
 .services {
@@ -244,7 +242,7 @@ h3 {
     font-weight: bold;
 }
 
-/* button2 is for all services button */
+/* button2 is for applying styled to all "services" buttons */
 .button2 {
     background-color: #222;
     padding: 1rem;
@@ -285,11 +283,11 @@ h3 {
     padding: 1rem;
 }
 
-/* Ourvision section with wrapper on background full-sized image  */
+/* Our vision section with wrapper on background full-sized image and contents */
 .our-vision {
     background-image: url("../images/vision.jpg");/*img for background to overlap content*/
     margin: 1rem auto;
-    background-size: cover;
+    background-size: cover; /*Scale the image as large as possible to fill the container and stretch the image as needed*/
     width: 100%;
     color: white;
     padding: 2rem;
@@ -300,8 +298,8 @@ h3 {
     margin: auto;
 }
 
-
-.wrapper-ourvision h3, p {
+.wrapper-ourvision h3, 
+.wrapper-ourvision p {
     padding-left: 0;
 }
 
@@ -331,7 +329,8 @@ height: fit-content;
     padding-bottom: 1rem;
 }
 
-.our-team h2, h3 {
+.our-team h2, 
+.our-team h3 {
     padding: 1rem;
 }
 
@@ -428,7 +427,7 @@ table {
 td,
 th {
     border: #222 solid 1px;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 }
 
 thead {
@@ -437,7 +436,7 @@ thead {
 
 .submit-button {
     color: #c78c06;
-    font-weight:  800;
+    font-weight: 800; /*make font bold*/
     font-size: 1rem;
     margin-top: 1rem;
 }
@@ -499,20 +498,20 @@ thead {
     nav li {
         font-size: 1rem;
     }
-
+/* style search boc on the header */
     .searchbox {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
+/* style about us section */
     .wrapper-aboutus{
         width: 100%;
         margin: auto;
         height: auto;
         max-width: 1200px;
     }
-
+/* style our team, our .services, contact us section's wrapper contents*/
     .wrapper {
         width: 90%;
         margin: auto;
@@ -542,38 +541,40 @@ thead {
     .about {
         padding-left: 2rem;
         height: fit-content;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: grid; /*Allow display img specifying the ratio of available space in a grid container*/
+        grid-template-columns: 1fr 1fr; /*Divide space into two equal parts*/
         padding-bottom: 1rem;
 
     }
 
     .about img {
+        /* object-fit: cover; */
         margin-right: 0.5rem;
         margin-left: 0.5rem;;
     }
 
     .about-text {
         height: fit-content;
+        margin-left: 0.8rem;
     }
 
     /* use grid to put services boxes in 5 position */
     .services {
         padding-left: 2rem;
         height: fit-content;
-        display: grid;
+        display: grid; /*Create a grid and position elements in services according to their width*/
         grid-gap: 0.5rem;
-        justify-content: space-around;
-        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-between;
+        grid-template-columns: repeat(6, 1fr); /*Repeat 1fr 6 times to set grid column*/
         grid-template-areas: 
             "services services services services services services"
             "digital digital digital marketing marketing marketing"
-            "video video web web print print";
+            "video video web web print print"; /*Use grid area names for specifying the width of each box*/
     }
 
     .services-title {
         margin-left: 1rem;
-        grid-area: services;
+        grid-area: services; /* apply each grid area name on the template */
     }
 
     /* apply each grid area name on the template */
@@ -603,20 +604,26 @@ thead {
         text-align: center;
     }
     
+    .wrapper-ourvision {
+        width: 70%;
+        margin: auto;
+    }
+
     .our-team {
         height: fit-content;
     }
 
     /* use flex to display member information in one line */
     .member1box{
-        height: fit-content;
         display: flex;
         padding-bottom: 0;
         margin-bottom: 0;
+        height: fit-content;
     }
 
     .member1box img {
         width: 50%;
+        height: fit-content;
     }
 
     .member1,
@@ -641,12 +648,12 @@ thead {
     .contact {
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /*Repeat 1fr 2 times to set grid column*/
         grid-gap: 0.5rem;
         grid-template-areas:
             "title title"
             "messagearea location"
-            "chart chart";
+            "chart chart"; /*Use grid area names for specifying the width of each box*/
     }
 
     .contact .contact-title {
@@ -666,4 +673,5 @@ thead {
     .contact .location {
         grid-area: location;
     }
+    
 }
