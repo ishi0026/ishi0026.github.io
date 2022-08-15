@@ -46,6 +46,7 @@ nav {
     text-align: center;
 }
 
+
 nav li {
     padding: 1rem;
     margin: auto;
@@ -59,6 +60,7 @@ nav li a {
 
 nav li:hover {
     background-color: #c78c06;
+    width: 96%;
 }
 
 nav li a:hover{
